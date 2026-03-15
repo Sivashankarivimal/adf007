@@ -1,0 +1,22 @@
+{
+	"name": "DS_TESTFILTERCSVFILES",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_TESTFILTERCSVFILES",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "testfiltercsvfiles"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
