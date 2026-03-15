@@ -23,6 +23,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage3'"
 		},
+		"LS_ADLS_CSVFILES_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_ADLS_CSVFILES'"
+		},
 		"LS_BULKCSV_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_BULKCSV'"
@@ -43,6 +47,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'linkedService1'"
 		},
+		"ls_lookup_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ls_lookup'"
+		},
 		"ls_multifiles_csv_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ls_multifiles_csv'"
@@ -56,6 +64,10 @@
 			"defaultValue": "https://adlsdevbank03.dfs.core.windows.net/"
 		},
 		"AzureDataLakeStorage3_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevbank03.dfs.core.windows.net/"
+		},
+		"LS_ADLS_CSVFILES_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsdevbank03.dfs.core.windows.net/"
 		},
@@ -74,6 +86,10 @@
 		"LS_MULTIPLEFILES_CSV_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsdevbank03.dfs.core.windows.net"
+		},
+		"ls_lookup_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevbank03.dfs.core.windows.net/"
 		},
 		"ls_multifiles_csv_properties_typeProperties_url": {
 			"type": "string",
@@ -118,6 +134,9 @@
 					"AzureDataLakeStorage3_accountKey": {
 						"value": "[parameters('AzureDataLakeStorage3_accountKey')]"
 					},
+					"LS_ADLS_CSVFILES_accountKey": {
+						"value": "[parameters('LS_ADLS_CSVFILES_accountKey')]"
+					},
 					"LS_BULKCSV_accountKey": {
 						"value": "[parameters('LS_BULKCSV_accountKey')]"
 					},
@@ -133,6 +152,9 @@
 					"linkedService1_connectionString": {
 						"value": "[parameters('linkedService1_connectionString')]"
 					},
+					"ls_lookup_accountKey": {
+						"value": "[parameters('ls_lookup_accountKey')]"
+					},
 					"ls_multifiles_csv_accountKey": {
 						"value": "[parameters('ls_multifiles_csv_accountKey')]"
 					},
@@ -145,6 +167,9 @@
 					"AzureDataLakeStorage3_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage3_properties_typeProperties_url')]"
 					},
+					"LS_ADLS_CSVFILES_properties_typeProperties_url": {
+						"value": "[parameters('LS_ADLS_CSVFILES_properties_typeProperties_url')]"
+					},
 					"LS_BULKCSV_properties_typeProperties_url": {
 						"value": "[parameters('LS_BULKCSV_properties_typeProperties_url')]"
 					},
@@ -156,6 +181,9 @@
 					},
 					"LS_MULTIPLEFILES_CSV_properties_typeProperties_url": {
 						"value": "[parameters('LS_MULTIPLEFILES_CSV_properties_typeProperties_url')]"
+					},
+					"ls_lookup_properties_typeProperties_url": {
+						"value": "[parameters('ls_lookup_properties_typeProperties_url')]"
 					},
 					"ls_multifiles_csv_properties_typeProperties_url": {
 						"value": "[parameters('ls_multifiles_csv_properties_typeProperties_url')]"
